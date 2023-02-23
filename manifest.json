@@ -3,6 +3,7 @@
   "name": "My Extension",
   "version": "1.0",
   "description": "My extension description",
+  "permissions": ["tabs"],
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
@@ -11,5 +12,9 @@
   "browser_action": {
     "default_icon": "icon-48.png",
     "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   }
 }
