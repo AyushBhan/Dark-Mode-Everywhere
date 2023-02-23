@@ -1,16 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "Dark Mode Everywhere",
+  "name": "My Extension",
   "version": "1.0",
-  "description": "Enables dark mode for all websites.",
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "storage",
-    "<all_urls>"
-  ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+  "description": "My extension description",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon-48.png",
+    "default_popup": "popup.html"
   }
 }
